@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="payment_aurora_arise_form">
+    <div class="o_aurora_form">
+        <input type="text" id="o_aurora_card_number" required="required"/>
+        <input type="text" id="o_aurora_expiry_month" required="required"/>
+        <input type="text" id="o_aurora_expiry_year" required="required"/>
+        <input type="text" id="o_aurora_cvv" required="required"/>
+        <input type="text" id="o_aurora_cardholder_name" required="required"/>
+        <div class="o_aurora_error alert alert-danger d-none"></div>
+    </div>
+</template>
+</odoo>

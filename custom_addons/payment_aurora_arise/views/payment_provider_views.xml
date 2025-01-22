@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="payment_provider_form" model="ir.ui.view">
+        <field name="name">payment.provider.form.inherit.aurora_arise</field>
+        <field name="model">payment.provider</field>
+        <field name="inherit_id" ref="payment.payment_provider_form"/>
+        <field name="arch" type="xml">
+            <group name="provider_credentials" position="inside">
+                <group name="aurora_arise_credentials" invisible="code != 'aurora_arise'">
+                    <field name="name" 
+                           string="Display Name" 
+                           required="code == 'aurora_arise'"/>
+                    <field name="aurora_client_id"
+                           string="Client ID"
+                           required="code == 'aurora_arise' and state != 'disabled'"/>
+                    <field name="aurora_client_secret"
+                           string="Client Secret"
+                           required="code == 'aurora_arise' and state != 'disabled'"
+                           password="True"/>
+                    <field name="aurora_payment_processor_id"
+                           string="Payment Processor ID"
+                           required="code == 'aurora_arise' and state != 'disabled'"/>
+                    <field name="aurora_api_url"
+                           string="API URL"
+                           required="code == 'aurora_arise' and state != 'disabled'"/>
+                </group>
+            </group>
+        </field>
+    </record>
+</odoo>

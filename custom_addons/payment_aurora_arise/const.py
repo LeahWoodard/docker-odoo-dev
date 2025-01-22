@@ -1,0 +1,61 @@
+SUPPORTED_LOCALES = [
+    'en_US', 'nl_NL', 'nl_BE', 'fr_FR',
+    'fr_BE', 'de_DE', 'de_AT', 'de_CH',
+    'es_ES', 'ca_ES', 'pt_PT', 'it_IT',
+    'nb_NO', 'sv_SE', 'fi_FI', 'da_DK',
+    'is_IS', 'hu_HU', 'pl_PL', 'lv_LV',
+    'lt_LT'
+]
+
+SUPPORTED_CURRENCIES = [
+    'AED',
+    'AUD',
+    'BGN',
+    'BRL',
+    'CAD',
+    'CHF',
+    'CZK',
+    'DKK',
+    'EUR',
+    'GBP',
+    'HKD',
+    'HRK',
+    'HUF',
+    'ILS',
+    'ISK',
+    'JPY',
+    'MXN',
+    'MYR',
+    'NOK',
+    'NZD',
+    'PHP',
+    'PLN',
+    'RON',
+    'RUB',
+    'SEK',
+    'SGD',
+    'THB',
+    'TWD',
+    'USD',
+    'ZAR'
+]
+
+DEFAULT_PAYMENT_METHOD_CODES = {
+    # Primary payment methods.
+    'card',
+    'ideal',
+    # Brand payment methods.
+    'visa',
+    'mastercard',
+    'amex',
+    'discover',
+}
+
+PAYMENT_METHODS_MAPPING = {
+    'apple_pay': 'applepay',
+    'card': 'creditcard',
+    'bank_transfer': 'banktransfer',
+    'kbc_cbc': 'kbc',
+    'p24': 'przelewy24',
+    'sepa_direct_debit': 'directdebit',
+}
