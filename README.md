@@ -38,7 +38,7 @@ Before proceeding, ensure you have the following installed:
    ```
 
 5. **Add Your Addons**
-   Place your addons in the `custom-addons` folder and restart the Docker stack (`docker compose restart odoo-dev`) using docker extension vscode.
+   Place your addons in the `custom_addons` folder and restart the Docker stack (`docker compose restart odoo-dev`) using docker extension vscode.
 
 6. **Debugging**
    - Set breakpoints in your source code within VSCode.

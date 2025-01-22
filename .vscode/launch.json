@@ -14,15 +14,15 @@
             },
             "pathMappings": [
                 {
-                    "localRoot": "${workspaceFolder}/custom-addons",
-                    "remoteRoot": "/mnt/custom-addons"
+                    "localRoot": "${workspaceFolder}/custom_addons",
+                    "remoteRoot": "/mnt/custom_addons"
                 },
                 {
                     "localRoot": "${workspaceFolder}/odoo",
                     "remoteRoot": "/usr/lib/python3/dist-packages/odoo"
                 }
             ],
-            "justMyCode": true
+            "justMyCode": false
         }
     ]
 }
